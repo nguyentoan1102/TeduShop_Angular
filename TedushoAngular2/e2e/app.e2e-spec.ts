@@ -1,14 +1,14 @@
-import { AppPage } from './app.po';
+import { TedushopAngular2Page } from './app.po';
 
-describe('tedusho-angular2 App', () => {
-  let page: AppPage;
+describe('tedushop-angular2 App', () => {
+  let page: TedushopAngular2Page;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new TedushopAngular2Page();
   });
 
-  it('should display welcome message', () => {
+  it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });
