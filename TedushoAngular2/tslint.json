@@ -10,7 +10,7 @@
       "check-space"
     ],
     "curly": true,
-    "eofline": true,
+    "eofline": false,
     "forin": true,
     "import-blacklist": [true, "rxjs"],
     "import-spacing": true,
@@ -63,7 +63,7 @@
       "check-else",
       "check-whitespace"
     ],
-    "prefer-const": true,
+    "prefer-const": false,
     "quotemark": [
       true,
       "single"
@@ -97,7 +97,6 @@
       "check-separator",
       "check-type"
     ],
-
     "directive-selector": [true, "attribute", "app", "camelCase"],
     "component-selector": [true, "element", "app", "kebab-case"],
     "use-input-property-decorator": true,
