@@ -8,7 +8,9 @@ import 'rxjs/add/operator/map';
 export class AuthenService {
   constructor(private _http: Http) { }
   login(username: string, password: string) {
-    let body = 'userName=' + encodeURIComponent(username) + '&password=' + encodeURIComponent(password) + '&grant_type=password';
+    let body = 'userName=' + encodeURIComponent(username) +
+      '&password=' + encodeURIComponent(password) +
+      '&grant_type=password';
     let headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
     let options = new RequestOptions({ headers: headers });
