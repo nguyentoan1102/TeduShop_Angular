@@ -1,3 +1,5 @@
+import { AuthenService } from './../Core/services/authen.service';
+import { UtilityService } from './../Core/services/utility.service';
 import { HomeModule } from './home/home.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -12,6 +14,7 @@ import { UserModule } from './user/user.module';
     HomeModule,
     RouterModule.forChild(mainRoutes)
   ],
-  declarations: [MainComponent]
+  declarations: [MainComponent],
+  providers: [UtilityService, AuthenService]
 })
 export class MainModule { }

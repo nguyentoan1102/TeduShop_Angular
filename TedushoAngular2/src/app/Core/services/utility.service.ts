@@ -10,7 +10,7 @@ export class UtilityService {
     this._router = router;
   }
   convertDateTime(date: Date) {
-    var _formattedDate = new Date(date.toString());
+    let _formattedDate = new Date(date.toString());
     return _formattedDate.toDateString();
   }
   navigate(path: string) {
