@@ -8,7 +8,8 @@ export const mainRoutes: Routes = [
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', loadChildren: './home/home.module#HomeModule' },
             // localhost:4200/main/user
-            { path: 'user', loadChildren: './user/user.module#UserModule' }
+            { path: 'user', loadChildren: './user/user.module#UserModule' },
+            { path: 'role', loadChildren: './role/role.module#RoleModule' }
         ]
     }
     // tslint:disable-next-line:eofline
