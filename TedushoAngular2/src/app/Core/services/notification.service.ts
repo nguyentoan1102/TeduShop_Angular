@@ -36,11 +36,11 @@ export class NotificationService {
       // language resources
       glossary: {
         // dialogs default title
-        title: 'Xác nhận',
+        title: 'Confirm',
         // ok button text
-        ok: 'Đồng ý',
+        ok: 'OK',
         // cancel button text
-        cancel: 'Hủy'
+        cancel: 'Cancel'
       },
       // theme settings
       theme: {
