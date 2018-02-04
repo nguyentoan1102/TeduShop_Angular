@@ -11,10 +11,10 @@
 
       <div class="input-group">
 
-        <input type="text" class="form-control" placeholder="Role name ...">
+        <input type="text" class="form-control" name="filter" [(ngModel)]="filter" (keyup.enter)="loadData()" placeholder="Role name ...">
         <span class="input-group-btn">
 
-          <button class="btn btn-default" type="button">Search!</button>
+          <button class="btn btn-default" type="button" (click)="loadData()">Search!</button>
         </span>
       </div>
     </div>
