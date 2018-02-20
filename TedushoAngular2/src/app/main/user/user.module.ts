@@ -7,6 +7,9 @@ import { CommonModule } from '@angular/common';
 import { UserComponent } from './user.component';
 import { Routes, RouterModule } from '@angular/router';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
+import { Daterangepicker } from 'ng2-daterangepicker';
+import { UploadService } from 'app/Core/services/upload.service';
 const userRoutes: Routes = [
   // localhost:4200/main/user
   { path: '', redirectTo: 'index', pathMatch: 'full' },
@@ -19,9 +22,11 @@ const userRoutes: Routes = [
     PaginationModule,
     ModalModule.forRoot(),
     FormsModule,
+    MultiselectDropdownModule,
+    Daterangepicker,
     RouterModule.forChild(userRoutes)
   ],
   declarations: [UserComponent],
-  providers: [DataService, NotificationService]
+  providers: [DataService, NotificationService, UploadService]
 })
 export class UserModule { }

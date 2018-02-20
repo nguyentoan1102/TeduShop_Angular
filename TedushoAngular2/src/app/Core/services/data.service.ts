@@ -46,7 +46,6 @@ export class DataService {
     let body = res.json();
     return body || {};
   }
-
   public handleError(error: any) {
     if (error.status === 401) {
       localStorage.removeItem(SystemConstants.CURRENT_USER);
@@ -56,7 +55,8 @@ export class DataService {
     // tslint:disable-next-line:one-line
     else {
       let errMsg = (error.message) ? error.message :
-        error.status ? `${error.status} - ${error.statusText}` : 'Lỗi hệ thống';
+        error.status ? `${error.status} - ${error.statusText}` : 'Error System!';
+      console.log(error._body);
       this._notificationService.printErrorMessage(errMsg);
       return Observable.throw(errMsg);
     }
